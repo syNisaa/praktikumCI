@@ -1,13 +1,12 @@
 <div class="sidebar" data-color="white" data-active-color="danger">
     <div class="logo">
-        <a href="https://www.creative-tim.com" class="simple-text logo-mini">
+        <a href="#" class="simple-text logo-mini">
             <div class="logo-image-small">
-                <img src="../assets/img/logo-small.png">
             </div>
             <!-- <p>CT</p> -->
         </a>
-        <a href="https://www.creative-tim.com" class="simple-text logo-normal">
-            Creative Tim
+        <a href="#" class="simple-text logo-normal">
+        Hallo! <?php echo $this->session->userdata('username') ?>
             <!-- <div class="logo-image-big">
             <img src="../assets/img/logo-big.png">
           </div> -->
@@ -37,6 +36,12 @@
                 <a href="<?php echo base_url().'index.php/mahasiswa'?>">
                     <i class="nc-icon nc-bell-55"></i>
                     <p>mahasiswa</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="<?php echo base_url().'index.php/admin/logout'?>">
+                    <button class="btn btn-outline-danger">Logout</button>
                 </a>
             </li>
         </ul>

@@ -30,10 +30,10 @@ Coded by www.creative-tim.com
 
 <body class="">
     <div class="wrapper ">
-        <!-- Sidebar -->
+        <!-- Sidebar --> <?php $this->load->view("template/sidebar.php") ?>");
         <div class="main-panel">
             <!-- Navbar -->
-            
+            <?php $this->load->view("template/navbar.php") ?>");
             <!-- End Navbar -->
             <div class="content">
                 <div class="row">
@@ -213,7 +213,7 @@ Coded by www.creative-tim.com
                 </div>
             </div>
 
-            <!-- footer -->
+            <!-- footer --><?php $this->load->view("template/footer.php") ?>");
         </div>
     </div>
     <!--   Core JS Files   -->
